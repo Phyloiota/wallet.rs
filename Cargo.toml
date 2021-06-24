@@ -35,7 +35,8 @@ riker = "0.4"
 slog = "2.7"
 
 # ledger hardware wallets
-iota-ledger = { git = "https://github.com/iotaledger/ledger.rs", branch = "develop", optional = true  }
+# iota-ledger = { git = "https://github.com/iotaledger/ledger.rs", branch = "develop", optional = true  }
+iota-ledger = { git = "https://github.com/Thoralf-M/ledger.rs", branch = "windows", optional = true  }
 
 # migration
 iota-migration = { git = "https://github.com/iotaledger/iota.rs", rev = "c9509f8c911ef0dcca70dda83247e2dcbd85aa81", package = "iota-core" }
@@ -54,7 +55,7 @@ quickcheck = "1.0"
 quickcheck_macros = "1.0"
 
 [features]
-default = ["stronghold"]
+default = ["stronghold", "iota-ledger"]
 ledger-nano = ["iota-ledger"]
 ledger-nano-simulator = ["iota-ledger"]
 stronghold = []
