@@ -1,5 +1,12 @@
 # Changelog
 
+## \[0.6.0]
+
+- Fixes edge case in account discovery.
+  - [2320748d](https://github.com/iotaledger/wallet.rs/commit/2320748d968ca634e2e321ff6bcfe10500887a67) fix account discovery when there is only an internal address with balance ([#672](https://github.com/iotaledger/wallet.rs/pull/672)) on 2021-06-28
+- Added `mqttDisabled` option to disable mqtt.
+  - [349f8307](https://github.com/iotaledger/wallet.rs/commit/349f83074a378ca228dd86c3c975411de9b184fe) Add option to disable mqtt ([#665](https://github.com/iotaledger/wallet.rs/pull/665)) on 2021-06-22
+
 ## \[0.5.0]
 
 - Added generateAddresses function.
